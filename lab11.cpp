@@ -1,6 +1,3 @@
-// lab11.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
 int main()
@@ -8,7 +5,7 @@ int main()
     int a, b;
     cout << "Enter a value in integer variable a: ";
     cin >> a;
-    cout << "Enter a value in integer variable b:";
+    cout << "Enter a value in integer variable b: ";
     cin >> b;
 
     int* pa, * pb;
@@ -17,14 +14,12 @@ int main()
 
     *pa = *pa * 2;
 
-    int* tempa;
-
-    *tempa = *pa;
+    int tempa = *pa;
 
     *pa = *pb;
-    *pb = *tempa;
+    *pb = tempa;
 
-    cout << "Value of the variable a: " + *pa;
-    cout << "Value of the variable b: " + *pb;
+    cout << "Value of the variable a: " << a << endl;
+    cout << "Value of the variable b: " << b;
 }
 
