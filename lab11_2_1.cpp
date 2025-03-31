@@ -6,14 +6,15 @@ int main()
 
     a = new int;
     b = new int;
+    cout << "Enter value of a: ";
+    cin >> *a;
+    cout << "Enter value of b: ";
+    cin >> *b;
 
-    *a = 2;
-    *b = 6;
+    *a = *a / 2;
 
-    *a = *a * 2;
-
-    cout << "Value of the variable a: " + *a;
-    cout << "Value of the variable b: " + *b;
+    cout << "Value of the variable a: " << *a << endl;
+    cout << "Value of the variable b: " << *b << endl;
 
     delete a;
     delete b;
